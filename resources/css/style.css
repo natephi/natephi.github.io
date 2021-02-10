@@ -9,7 +9,7 @@ header {
     align-items: center;
     justify-content: space-evenly;
     padding: 0.75rem;
-    border-bottom: 1px solid rgba(232, 232, 232, 1);
+    border-bottom: 1px solid rgba(232, 236, 241, 1);
     z-index: 2;
     background-color: white;
     flex-flow: row nowrap;
@@ -79,16 +79,18 @@ header nav {
     align-items: center;
     flex-flow: row nowrap;
     flex: 1 1 auto;
+    border-top: solid 1px rgba(255, 236, 178, 0.25);
 }
 
 .background img {
     height: 350px;
     width: auto;
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .divider {
     text-align: center;
-    padding: 2rem 0 2rem 0;
+    padding: 3rem 0 3rem 0;
 }
 
 li {
@@ -99,18 +101,20 @@ li {
 
 
 
-#linkedin {
-    height: 40px;
+#linkedin, #github {
+    height: 30px;
     width: auto;
     margin-left: 1rem;
+    box-shadow: none;
     
 }
 
-#github {
-    height: 40px;
+#youtube {
+    height: 30px;
     width: auto;
     margin-left: 1rem;
-   
+    box-shadow: none;
+    
 }
 
 .profileicons {
@@ -125,7 +129,9 @@ li {
     display: flex;
     flex-flow: column nowrap;
    background-color: rgba(232, 236, 241, 1);
-   padding: 2rem;
+   padding: 2rem 2rem 5rem 2rem;
+   border-top: solid 1px rgba(255, 236, 178, 0.25);
+   border-bottom: solid 1px rgba(255, 236, 178, 0.25);
    }
 
 
@@ -142,6 +148,37 @@ li {
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 1rem 1rem 1rem;
-        border: solid 1px;
+     border: solid 1px;
+    background-color: rgba(255, 236, 178, 0.25);
+     box-shadow: 3px 3px 5px 6px #ccc;
        
+}
+
+footer {
+    padding: 3rem 2rem 5rem 2rem;
+    background-color: black;
+    color:rgba(232, 236, 241, 1);
+    border-top: solid 1px rgba(255, 236, 178, 0.25);  
+}
+
+footer h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+    text-decoration: underline;
+}
+
+footer nav {
+    display: flex;
+    flex-flow: column nowrap;
+    line-height: 2.2rem;
+    
+}
+
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
