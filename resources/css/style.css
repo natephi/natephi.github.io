@@ -69,8 +69,8 @@ header nav {
            
    }
 
-#background {
-    padding: 0 2rem 2rem 2rem;
+.background {
+    padding: 0 2rem 5rem 2rem;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -81,8 +81,8 @@ header nav {
     flex: 1 1 auto;
 }
 
-#background img {
-    height: 400px;
+.background img {
+    height: 350px;
     width: auto;
 }
 
@@ -94,10 +94,54 @@ header nav {
 li {
     list-style: disc;
     margin-left: 2rem;
-    line-height: 2rem;
+    line-height: 2.2rem;
 }
 
-.profiledescription img {
-    height: 20px;
+
+
+#linkedin {
+    height: 40px;
     width: auto;
+    margin-left: 1rem;
+    
+}
+
+#github {
+    height: 40px;
+    width: auto;
+    margin-left: 1rem;
+   
+}
+
+.profileicons {
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+}
+
+.vision {
+    display: flex;
+    flex-flow: column nowrap;
+   background-color: rgba(232, 236, 241, 1);
+   padding: 2rem;
+   }
+
+
+.vision h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+   
+}
+
+#vispara {
+    line-height: 1.8rem;
+    text-align: center;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1rem 1rem 1rem;
+        border: solid 1px;
+       
 }
