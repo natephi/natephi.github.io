@@ -12,16 +12,35 @@
 
 <body>
 
-<header>
+<header class="main-header" style="top: 0px;">
+<div class="container">
 
-    <nav>
-  <a href=""><div class="logo"><img src="./resources/images/logo.png"/></div></a>
-<a href="#profilelink"><p>Background</p></a>
-<a href="#vis"><p>Vision</p></a>
-<a href="#pro"><p>Projects</p></a>
-<a href="#con"><p>Contact</p></a>
+    <img class="logo" src="./resources/images/logo.png"/>
+
+    <nav class="main-header-menu dropdown-menu">
+        <ul style="height: 0px;">
+<li><a href="#profilelink" class="dropdown-menu-item">Background</a></li>
+    <li><a href="#vis" class="dropdown-menu-item">Vision</a></li>
+        <li><a href="#pro" class="dropdown-menu-item">Projects</a></li>
+            <li><a href="#con" class="dropdown-menu-item">Contact</a></li>
+            </ul>
     </nav>
+    <nav class="main-header-menu">
+        <ul>
+            <li><a href="#profilelink">Background</a></li>
+            <li><a href="#vis">Vision</a></li>
+            <li><a href="#pro">Projects</a></li>
+            <li><a href="#con">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="main-header-dropdown-button" onclick="toggleDropdownMenu(1)">
+        <div class="stripes"></div>
+        <div class="stripes"></div>
+        <div class="stripes"></div>
+        <div class="stripes"></div>
+    </button>
 
+</div>
     </header>
 
 <main>
@@ -145,7 +164,7 @@
 </div>
 
 </footer>
-
+<script src="./resources/scripts/main-header-menu.js.js"></script>
 </body>
 
 </html>

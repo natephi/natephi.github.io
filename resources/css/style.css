@@ -4,28 +4,98 @@ body {
     grid-template-rows: auto;
 }
 
-header {
+.main-header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 0.75rem;
-    border-bottom: 1px solid rgba(232, 236, 241, 1);
-    z-index: 2;
     background-color: white;
     flex-flow: row nowrap;
     flex: 1 1 auto;
-  }
-
-header nav .logo {
-    grid-column: 1 / 3;
-    z-index: 2;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    box-shadow:0 0 3px var(--main-header-shadow-color);
+    transition: var(--main-header-transition);
+    text-transform: capitalize;
 }
 
-header nav .logo img {
-    height: 4rem;
-    margin-right: 3rem;
-    z-index: 2;
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    }
 
+  .main-header-menu {
+    display:none;
+    font-weight:100;
+    width:var(--main-header-menu-width);
+    margin:20px
+}
+
+.main-header-menu ul {
+    display:flex;
+    justify-content:center;
+    height:100%;
+    width:100%;
+    list-style-type:none
+}
+
+.main-header-menu a {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    background:var(--main-header-secondary-color);
+    color:var(--main-header-quaternary-color);
+    border:1px solid var(--main-header-tertiary-color);
+    width:var(--main-header-menu-button-width);
+    height:var(--main-header-menu-button-height);
+    border-radius:5px;
+    transition:var(--main-header-transition);
+    text-decoration:none
+}
+
+.main-header-menu a:hover {
+    background:var(--main-header-tertiary-color);
+    box-shadow:0px 0px 10px 0px var(--main-header-shadow-color)
+  }
+            
+
+  .dropdown-menu {
+    display:flex;
+    width:100%
+    }
+
+
+    .dropdown-menu ul {  
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        position:absolute;
+        height:0;
+        top:70px;
+        left:0;
+        background:rgba(232, 236, 241, 1);
+        overflow:hidden;
+        transition:var(--main-header-transition)
+        }
+
+@media(min-width:768px) {
+    .main-header-menu {
+    display:flex
+}
+        
+   .dropdown-menu {
+    display:none;
+}
+        
+  .main-header-dropdown-button {
+   display:none
+}
+}
+
+header img {
+    height: 4rem;
+    margin-right: 8rem;
 }
 
 header nav {
@@ -107,6 +177,12 @@ header nav {
     text-align: center;
     padding: 3rem 0 3rem 0;
 }
+
+header li {
+    list-style: none;
+   }
+
+
 
 li {
     list-style: disc;
