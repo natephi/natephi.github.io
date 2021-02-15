@@ -1,5 +1,5 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
     font-size: 15px;
     color: rgba(46, 49, 49, 1);
     font-family: "Lexend Mega", sans-serif;
@@ -9,7 +9,6 @@ html {
     --main-header-quaternary-color: rgba(46, 49, 49, 1);
     --main-header-shadow-color: rgba(0, 0, 0, 0.9);
     --main-header-font-family: "Lexend Mega", sans-serif;
-    --main-header-menu-width: 450px;
     --main-header-menu-button-height: 2rem;
     --main-header-menu-button-width: 9rem;
     --main-header-transition: all 0.35s ease
