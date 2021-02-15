@@ -2,7 +2,7 @@ const mainHeader=document.querySelector(".main-header")
 const dropdownMenu=document.querySelector(".dropdown-menu ul")
 const dropdownMenuItems=document.querySelectorAll(".dropdown-menu-item")
 const HEADER_HEIGHT=70
-const DROPDOWN_MENU_HEIGHT=360
+const DROPDOWN_MENU_HEIGHT=330
 const TOP_DISTANCE_TO_HIDE_THE_HEADER=330
 const showMainHeader=()=>mainHeader.style.top="0"
 const hideMainHeader=()=>mainHeader.style.top=`-${HEADER_HEIGHT}px`
